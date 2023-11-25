@@ -35,10 +35,10 @@ sayMyName('Lucas');
 
 // função que está sendo como parametro para outra função
 
-function callbackFunction(name) {
+function callbackFunction(callback) {
   console.log('antes de executar a funcao callback');
 
-  name();
+  callback();
 
   console.log('Depois de executar a callback');
 };
