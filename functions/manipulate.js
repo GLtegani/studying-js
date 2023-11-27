@@ -61,21 +61,20 @@ techs.pop();
 techs.shift();
 
 // take some elements of array
-
-// console.log(techs.slice(1, 3));
+// console.log(techs.slice(0, 2));
 
 // remove one or more itens of any array positions
 
-techs.splice(2);
 
 // find position of array element
 
-let index = techs.indexOf('css');
+let index = techs.indexOf('js');
+techs.splice(index, 1);
 
 
 
 
-console.log(index);
+console.log(techs);
 
 
 
