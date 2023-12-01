@@ -91,3 +91,109 @@ console.log(--decrement);
 
 console.log(4 ** 4);
 
+
+// logical operators
+
+// 2 valores booleanos, quando verificados
+// resultara em verdadeiro ou falso
+
+let pao = false;
+let queijo = false;
+
+// AND &&
+
+console.log(pao && queijo);
+
+
+// OR ||
+console.log(pao || queijo);
+
+// NOT !
+console.log(!pao);
+
+
+let x;
+
+
+// assignment
+x = 1;
+
+// addition assignment
+x += 2;
+
+// subtraction assignment
+x -= 1;
+
+// multiplication assignment
+x *= 2;
+
+// division assignment
+x /= 2;
+
+// remainder, exponetiation
+
+x %= 2;
+x **= 2;
+console.log(x);
+
+
+// condição ternaria
+
+let rap10 = true;
+let scrambledEgg = false;
+
+const niceBreakfast = rap10 && scrambledEgg ? 'Café bom' : 'Café ruim';
+
+console.log(niceBreakfast);
+
+
+// maior de 18
+
+age = 19;
+
+const canDrive = age >= 18 ? 'Can drive' : 'Cannot drive';
+console.log(canDrive);
+
+
+/* 
+  Operator precedence 
+  
+
+  grouping ()
+  negação e incremento ! ++ --
+  multiplicação e divisão * /
+  adição e subtração + -
+  relacional < <= > >=
+  igualdade == != === !==
+  AND &&
+  OR ||
+  condicional ?:
+  assignment = += -= *= %=
+*/ 
+
+console.log(3 > 2 && 2 > 1);
+
+// Operadores de comparação
+
+let one = 1;
+let two = 2;
+
+// == igual a
+console.log(two == 1);
+console.log(one == '1');
+
+// != diferente de
+console.log(one != two);
+console.log(one != 1);
+console.log(one != '1');
+
+// === estritamente igual a
+console.log(one === '1');
+console.log(one === 1 );
+
+// !== estritamente diferente de
+console.log(two !== '2');
+console.log(two !== 2);
+
+// > maior que
+console.log(one > two);
