@@ -2,17 +2,28 @@
 
 // Armazenar o máximo de dados possiveis em variaveis para melhor manipulação e entendimento deles
 
-let temperature = 38;
-let hightTemperature = temperature >= 37.5;
-let mediumTemperature = temperature < 37.5 && temperature >= 37 ;
 
-if(hightTemperature) {
-  console.log('Está com febre alta.');
-} else if(mediumTemperature) {
-  console.log('Febre moderada');
-} else {
-  console.log('Saudável');
+
+
+function fever(temperature) {
+
+  let hightTemperature = temperature >= 37.5;
+  let mediumTemperature = temperature < 37.5 && temperature >= 37 ;
+  let normalTemperature = temperature < 37 && temperature >= 35.1;
+
+  if(hightTemperature) {
+    return 'Está com febre alta!';
+  } else if(mediumTemperature) {
+    return 'Está com febre moderada.';
+  } else if(normalTemperature){
+    return 'Está saudável.';
+  } else {
+    return 'Está com hipotermia.';
+  };
 };
+
+console.log(fever(35));
+
 
 
 
